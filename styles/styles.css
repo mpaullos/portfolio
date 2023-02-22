@@ -1,3 +1,37 @@
-body {
-    background-color: blue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+
+}
+
+.container-fluid {
+    padding: 0% 8%;
+    font-size: 1.8rem;
+  }
+
+.navbar-brand {
+    font-size: 2.8rem;
+}
+
+.socials {
+   margin-left: 72px;
+   
+    
+}
+
+.nav-link:hover{
+    color: rgb(88, 217, 221) !important;
+}
+
+/* Media Querrys */
+
+@media (max-width: 1028px) {
+    .socials {
+      margin-left: 0;
+    }
 }
