@@ -40,7 +40,7 @@ html {
 }
 
 .content-home {
-    padding: 0% 8%;
+    margin-left: 146px;
 }
 h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -59,6 +59,11 @@ p {
 
 span {
     color: #58d9dd;
+}
+
+.logos {
+    width: 200px;
+    height: 200px;
 }
 
 /* .background-home {
