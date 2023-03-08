@@ -70,6 +70,16 @@ span {
     background-color: black;
 } */
 
+/* About */
+
+.profile {
+    background-color: red;
+}
+
+.about {
+    background-color: blue;
+}
+
 /* Media Querrys */
 
 @media (max-width: 1028px) {
