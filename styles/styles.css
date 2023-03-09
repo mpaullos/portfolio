@@ -1,69 +1,69 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62,5%;
+  font-size: 62, 5%;
+}
 
+body {
+  background-color: black;
 }
 
 .container-fluid {
-    padding: 0% 8%;
-    font-size: 1.8rem;
-    border-bottom: 1px solid #1f7dc0;
-    
-  }
+  padding: 0% 8%;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #1f7dc0;
+}
 
 .navbar-brand {
-    font-size: 2.8rem;
+  font-size: 2.8rem;
 }
 
 .socials {
-   margin-left: 72px;
-   margin-right: 20px;
-   
-    
+  margin-left: 72px;
+  margin-right: 20px;
 }
 
-.nav-link:hover{
-    color: #58d9dd !important;
+.nav-link:hover {
+  color: #58d9dd !important;
 }
 
 /* home */
 
 #home {
-    padding: 200px 0;
-    background-color: black;
-    /* max-width: 1140px; an image references*/
+  padding: 200px 0;
+  background-color: black;
+  border-bottom: 1px solid #1f7dc0;
+  /* max-width: 1140px; an image references*/
 }
 
 .content-home {
-    margin-left: 146px;
+  margin-left: 146px;
 }
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3.6rem;
-    color: white;
-    
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.6rem;
+  color: white;
 }
 
 p {
-    color: #d8d8d8;
-    font-size: 1.6rem;
-    font-weight: 300;
-    line-height: 160%;
-    margin: 40px 0;
+  color: #d8d8d8;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 160%;
+  margin: 40px 0;
 }
 
 span {
-    color: #58d9dd;
+  color: #58d9dd;
 }
 
 .logos {
-    width: 400px;
-    height: 400px;
+  width: 400px;
+  height: 400px;
 }
 
 /* .background-home {
@@ -72,23 +72,37 @@ span {
 
 /* About */
 
-.profile {
-    background-color: red;
+#sobre {
+  background-color: black;
+  height: 600px;
+  margin-top: 10px;
 }
 
+.profile {
+  background-color: #09090b;
+  border: 2px solid #101013;
+  padding: 24px;
+  margin-top: 24px;
+}
+
+h4 {
+  color: #58d9dd;
+}
+
+
 .about {
-    background-color: blue;
+  background-color: blue;
 }
 
 /* Media Querrys */
 
 @media (max-width: 1028px) {
-    .socials {
-      margin-left: 0;
-      margin-right: 0;
-    }
-    
-    h1 {
-        font-size: 24px;
-    }
+  .socials {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
 }
