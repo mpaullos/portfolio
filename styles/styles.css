@@ -85,6 +85,11 @@ span {
   margin-top: 24px;
 }
 
+.profile-picture {
+  width: 600px;
+  height: 650px;
+}
+
 h4 {
   color: #58d9dd;
 }
@@ -108,8 +113,9 @@ h3 {
 button {
   width: 100px;
   height: 100px;
-  border: 2px solid #101013;
+  border: 5px solid #101013;
   background-color: black;
+  border-radius: 10%;
   
   
 }
@@ -118,6 +124,9 @@ button:hover {
   border-color: #58d9dd;
 }
 
+.brand-color {
+ color: #58d9dd;
+}
 /* Media Querrys */
 
 @media (max-width: 1028px) {
