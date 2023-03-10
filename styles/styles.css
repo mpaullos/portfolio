@@ -105,6 +105,19 @@ h3 {
   background-color: blue;
 }
 
+button {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #101013;
+  background-color: black;
+  
+  
+}
+
+button:hover {
+  border-color: #58d9dd;
+}
+
 /* Media Querrys */
 
 @media (max-width: 1028px) {
