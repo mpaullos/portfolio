@@ -74,7 +74,7 @@ span {
 
 #sobre {
   background-color: black;
-  height: 600px;
+  height: 780px;
   margin-top: 10px;
 }
 
@@ -116,6 +116,7 @@ button {
   border: 5px solid #101013;
   background-color: black;
   border-radius: 10%;
+  margin-right: 10px;
   
   
 }
@@ -126,6 +127,22 @@ button:hover {
 
 .brand-color {
  color: #58d9dd;
+ 
+}
+
+
+/* Portfólio */
+
+#portfolio {
+  background-color: red;
+}
+
+
+.projetos {
+  background-color: yellow;
+  width: 500px;
+  height: 500px;
+  margin-bottom: 20px;
 }
 /* Media Querrys */
 
