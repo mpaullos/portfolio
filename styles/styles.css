@@ -134,16 +134,27 @@ button:hover {
 /* Portfólio */
 
 #portfolio {
-  background-color: red;
+  background-color: #09090B;
 }
 
 
 .projetos {
   background-color: yellow;
-  width: 500px;
-  height: 500px;
+  width: 800px;
+  height: 350px;
   margin-bottom: 20px;
+  border: 3px solid red;
+  background-image: url("https://user-images.githubusercontent.com/82289818/206076227-0db68586-4ca3-400d-b531-6395d041b3a5.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  
 }
+.repo {
+ flex-wrap: nowrap;
+  
+  
+}
+
 /* Media Querrys */
 
 @media (max-width: 1028px) {
