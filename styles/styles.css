@@ -149,6 +149,17 @@ button:hover {
   background-repeat: no-repeat;
   
 }
+
+.tindog {
+  background-color: yellow;
+  width: 800px;
+  height: 350px;
+  margin-bottom: 20px;
+  border: 3px solid red;
+  background-image: url("https://user-images.githubusercontent.com/82289818/205789643-9cf82fda-ad0a-4f06-aae5-2a483dc60968.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
 .repo {
  flex-wrap: nowrap;
   
