@@ -189,6 +189,20 @@ button:hover {
   
 }
 
+.btn {
+  margin-top: 230px;
+  border-radius: 24px;
+  width: 120px;
+  height: 60px;
+}
+
+.btn {
+  display: none;
+}
+
+.holy-summer:hover .btn {
+  display: inline-block;
+}
 /* Media Querrys */
 
 @media (max-width: 1028px) {
