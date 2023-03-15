@@ -242,6 +242,15 @@ button:hover {
   display: inline-block;
   backdrop-filter: blur(1.5px);
 }
+
+
+/* Conhecimentos */
+
+#conhecimentos {
+  background-color: #00aeff;
+}
+
+
 /* Media Querrys */
 
 @media (max-width: 1028px) {
