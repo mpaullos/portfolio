@@ -179,6 +179,27 @@ button:hover {
   background-repeat: no-repeat;
 }
 
+.weather-project {
+  width: 800px;
+  height: 370px;
+  margin-bottom: 20px;
+  border: 3px solid #ffffff;
+  background-image: url("https://user-images.githubusercontent.com/82289818/209745071-907f9038-6cb2-4d91-8956-5f1cf26bd86b.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.newsletter {
+  width: 800px;
+  height: 370px;
+  margin-bottom: 20px;
+  border: 3px solid #ffffff;
+  background-image: url("https://user-images.githubusercontent.com/82289818/209544837-335d2e0d-280c-4dbc-a7ce-2522fd345685.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+
 .repo {
   flex-wrap: nowrap;
 }
