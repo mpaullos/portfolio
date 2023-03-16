@@ -243,6 +243,16 @@ button:hover {
   backdrop-filter: blur(1.5px);
 }
 
+.weather-project:hover .btn{
+  display: inline-block;
+  backdrop-filter: blur(1.5px);
+}
+
+.newsletter:hover .btn{
+  display: inline-block;
+  backdrop-filter: blur(1.5px);
+}
+
 
 /* Conhecimentos */
 
