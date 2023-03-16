@@ -21,17 +21,17 @@ a {
 
 .container-fluid {
   padding: 0% 8%;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   border-bottom: 1px solid #1f7dc0;
 }
 
 .navbar-brand {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
 }
 
 .socials {
   margin-left: 72px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 .nav-link:hover {
@@ -41,18 +41,18 @@ a {
 /* home */
 
 #home {
-  padding: 200px 0;
+  padding: 140px 0;
   background-color: black;
   border-bottom: 1px solid #1f7dc0;
   /* max-width: 1140px; an image references*/
 }
 
 .content-home {
-  margin-left: 146px;
+  margin-left: 104px;
 }
 h1 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.6rem;
+  font-size: 2.8rem;
   color: white;
 }
 
@@ -69,8 +69,8 @@ span {
 }
 
 .logos {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 
 /* .background-home {
