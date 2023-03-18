@@ -156,18 +156,18 @@ button:hover {
 }
 
 .holy-summer {
-  width: 800px;
-  height: 370px;
+  width: 600px;
+  height: 270px;
   margin-bottom: 20px;
   border: 3px solid #ffffff;
   background-image: url("https://user-images.githubusercontent.com/82289818/206076227-0db68586-4ca3-400d-b531-6395d041b3a5.png");
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .tindog {
-  width: 800px;
-  height: 370px;
+  width: 600px;
+  height: 270px;
   margin-bottom: 20px;
   border: 3px solid #ffffff;
   background-image: url("https://user-images.githubusercontent.com/82289818/205789643-9cf82fda-ad0a-4f06-aae5-2a483dc60968.png");
@@ -176,28 +176,28 @@ button:hover {
 }
 
 .bateria-game {
-  width: 800px;
-  height: 370px;
+  width: 600px;
+  height: 270px;
   margin-bottom: 20px;
   border: 3px solid #ffffff;
   background-image: url("https://user-images.githubusercontent.com/82289818/206331839-00e9a082-654c-4a19-a75e-ca22db739eb2.png");
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .simon-game {
-  width: 800px;
-  height: 370px;
+  width: 600px;
+  height: 270px;
   margin-bottom: 20px;
   border: 3px solid #ffffff;
   background-image: url("https://user-images.githubusercontent.com/82289818/204700694-99a58827-1147-4fe8-82c6-26882598dbce.png");
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .weather-project {
-  width: 800px;
-  height: 370px;
+  width: 600px;
+  height: 270px;
   margin-bottom: 20px;
   border: 3px solid #ffffff;
   background-image: url("https://user-images.githubusercontent.com/82289818/209745071-907f9038-6cb2-4d91-8956-5f1cf26bd86b.png");
@@ -206,8 +206,8 @@ button:hover {
 }
 
 .newsletter {
-  width: 800px;
-  height: 370px;
+  width: 600px;
+  height: 270px;
   margin-bottom: 20px;
   border: 3px solid #ffffff;
   background-image: url("https://user-images.githubusercontent.com/82289818/209544837-335d2e0d-280c-4dbc-a7ce-2522fd345685.png");
