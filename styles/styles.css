@@ -10,6 +10,11 @@ html {
 
 body {
   background-color: black;
+  /* remover cor azul em duplo clique */
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 a {
@@ -24,8 +29,6 @@ a {
   font-size: 1.4rem;
   border-bottom: 1px solid #1f7dc0;
 }
-
-
 
 .navbar-brand {
   font-size: 2.4rem;
@@ -88,7 +91,6 @@ span {
   margin-top: 160px;
 }
 
-
 .profile {
   background-color: #09090b;
   border: 2px solid #101013;
@@ -96,8 +98,6 @@ span {
   position: relative;
   top: 80px;
   height: 520px;
-
-  
 }
 
 .profile-picture {
@@ -130,15 +130,12 @@ h3 {
   margin: 20px 0 20px 0;
 }
 
-
-
 button {
   padding: 16px;
   border: 2px solid #101013;
   background-color: black;
   border-radius: 10%;
   margin-right: 10px;
-  
 }
 
 button:hover {
@@ -215,7 +212,6 @@ button:hover {
   background-repeat: no-repeat;
 }
 
-
 .repo {
   flex-wrap: nowrap;
 }
@@ -254,28 +250,26 @@ button:hover {
   backdrop-filter: blur(1.5px);
 }
 
-.simon-game:hover .btn{
+.simon-game:hover .btn {
   display: inline-block;
   backdrop-filter: blur(1.5px);
 }
 
-.weather-project:hover .btn{
+.weather-project:hover .btn {
   display: inline-block;
   backdrop-filter: blur(1.5px);
 }
 
-.newsletter:hover .btn{
+.newsletter:hover .btn {
   display: inline-block;
   backdrop-filter: blur(1.5px);
 }
-
 
 /* Conhecimentos */
 
 #conhecimentos {
-  background-color: #00aeff;
+  background-color: #000000;
 }
-
 
 /* Swipper */
 
@@ -296,7 +290,6 @@ button:hover {
   display: block;
   width: 100%;
 }
-
 
 /* Media Querrys */
 
