@@ -150,8 +150,11 @@ button:hover {
 
 #portfolio {
   background-color: #09090b;
+  padding-top: 40px;
 }
-
+#portfolio h1 {
+  margin-top: 50px;
+}
 .holy-summer {
   width: 600px;
   height: 270px;
@@ -269,6 +272,7 @@ button:hover {
 
 #conhecimentos {
   background-color: #000000;
+  height: 550px;
 }
 
 /* Swipper */
@@ -289,6 +293,21 @@ button:hover {
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+/* Contact */
+
+#contato {
+  background-color: #09090b;
+  padding: 1%;
+}
+footer p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.contact-socials {
+  margin: 20px 10px;
 }
 
 /* Media Querrys */
