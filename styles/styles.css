@@ -43,6 +43,13 @@ a {
   color: #58d9dd !important;
 }
 
+
+.brazil-flag, .us-flag {
+  width: 1.5em;
+  
+  
+}
+
 /* home */
 
 #home {
