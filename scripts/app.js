@@ -50,3 +50,13 @@ $(".swiper-slide").click(function () {
     $("#conhecimentos .teste").text(stack[8]);
   });
 });
+
+/* Translate */
+$(".dropdown-menu").click(function () {
+  const ptbr = $(".brazil-flag").attr("src");
+  console.log(ptbr, "ptbr path");
+  const en = $(".us-flag").attr("src");
+  console.log(en, "en path");
+  $(".brazil-flag").attr("src", `${en}`);
+  $(".us-flag").attr("src", `${ptbr}`);
+});
