@@ -52,11 +52,23 @@ $(".swiper-slide").click(function () {
 });
 
 /* Translate */
+check = true;
 $(".dropdown-menu").click(function () {
   const ptbr = $(".brazil-flag").attr("src");
   console.log(ptbr, "ptbr path");
   const en = $(".us-flag").attr("src");
   console.log(en, "en path");
+
   $(".brazil-flag").attr("src", `${en}`);
   $(".us-flag").attr("src", `${ptbr}`);
+
+  if (check) {
+    $(".en-us span").text("pt-br");
+
+    check = false;
+  } else {
+    $(".en-us span").text("en-us");
+    check = true;
+  }
+  console.log(cont);
 });
