@@ -15,6 +15,7 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 
+/* knowledge */
 stack = ["HTML5", "CSS3", "Javascript", "Bootstrap", "NodeJs", "Python3", "MongoDB", "JQuery", "SQL"];
 $(".swiper-slide").click(function () {
   $(".html5").click(function () {
@@ -53,7 +54,7 @@ $(".swiper-slide").click(function () {
 
 /* Translate */
 check = true;
-$(".dropdown-menu").click(function () {
+const navbarTranslate = $(".dropdown-menu").click(function () {
   const ptbr = $(".brazil-flag").attr("src");
   console.log(ptbr, "ptbr path");
   const en = $(".us-flag").attr("src");
@@ -86,5 +87,19 @@ $(".dropdown-menu").click(function () {
   } else {
     $(".en-us span").text("en-us");
     check = true;
+  }
+});
+
+const homeTranslate = $(".dropdown-menu").click(function () {
+  if (!check) {
+    $("#home h1").html("Hello, my name is <span>Marcos Paulo</span> <br />I am a <span>Front-End Developer</span>");
+    $("#home p").html(
+      "<p>I built some websites in order to improve my skills. So I decided to condense these constructions into a single location. I have skills in <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span>, <span>Bootstrap</span>, <span>Node.Js</span>, and <span>SQL</span>, for now!</p>"
+    );
+  } else {
+    $("#home h1").html("Olá, meu nome é <span>Marcos Paulo</span> <br />Eu sou um <span>Front-End Developer</span>");
+    $("#home p").html(
+      "<p>Eu construí alguns sites com o intuito de melhorar as minhas habilidades. Então resolvi condensar essas construções em um único local. Possuo habilidades em <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span>, <span>Bootstrap</span>, <span>Node.Js</span>, e <span>SQL</span>, por equanto!</p>"
+    );
   }
 });
