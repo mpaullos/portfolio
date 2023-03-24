@@ -59,8 +59,25 @@ $(".dropdown-menu").click(function () {
   const en = $(".us-flag").attr("src");
   console.log(en, "en path");
 
-  $(".brazil-flag").attr("src", `${en}`);
-  $(".us-flag").attr("src", `${ptbr}`);
+  $(".nav-link").each((index, element) => {
+    $(".brazil-flag").attr("src", `${en}`);
+    $(".us-flag").attr("src", `${ptbr}`);
+    // console.log(index, $(element).html());
+    var navTranslate = {
+      Inicio: "Home",
+      Sobre: "About",
+      Portifólio: "Portfolio",
+      Conhecimentos: "Knowledge",
+      Contato: "Contact",
+    };
+    var translateNavBar = Object.values(navTranslate)[index];
+    var restoreNavBar = Object.keys(navTranslate)[index];
+    if (check) {
+      $(element).text(translateNavBar);
+    } else {
+      $(element).text(restoreNavBar);
+    }
+  });
 
   if (check) {
     $(".en-us span").text("pt-br");
@@ -70,5 +87,4 @@ $(".dropdown-menu").click(function () {
     $(".en-us span").text("en-us");
     check = true;
   }
-  console.log(cont);
 });
