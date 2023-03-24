@@ -66,7 +66,7 @@ $(".dropdown-menu").click(function () {
     var navTranslate = {
       Inicio: "Home",
       Sobre: "About",
-      Portifólio: "Portfolio",
+      Portfólio: "Portfolio",
       Conhecimentos: "Knowledge",
       Contato: "Contact",
     };
