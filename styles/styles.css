@@ -324,12 +324,80 @@ footer p {
 /* Media Querrys */
 
 @media (max-width: 1028px) {
+  /* Navbar */
   .socials {
     margin-left: 0;
     margin-right: 0;
   }
 
+  /* Home */
   h1 {
     font-size: 24px;
   }
+  p {
+    font-size: 0.75rem;
+  }
+  .content-home {
+    margin-left: 0px;
+  }
+  .logos {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Sobre */
+  #sobre {
+    background-color: black;
+    height: 10680px;
+    margin-top: 160px;
+  }
+  
+  .profile {
+    background-color: #09090b;
+    border: 2px solid #101013;
+    padding: 20px;
+    position: relative;
+    top: 80px;
+    height: 520px;
+  }
+  
+  .profile-picture {
+    width: 320px;
+    height: 300px;
+    padding: 0;
+    position: relative;
+    top: -10px;
+  }
+  
+  h4 {
+    color: #58d9dd;
+  }
+  
+  h2 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: white;
+  }
+  
+  h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .about {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 20px 0 20px 0;
+  }
+  
+  button {
+    padding: 16px;
+    border: 2px solid #101013;
+    background-color: black;
+    border-radius: 10%;
+    margin-right: 10px;
+  }
+
+  
 }
