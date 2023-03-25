@@ -117,3 +117,27 @@ const aboutTranslate = $(".dropdown-menu").click(function () {
     );
   }
 });
+
+const portfolioTranslate = $(".dropdown-menu").click(function () {
+  if (!check) {
+    $("#portfolio h1").html("Projects");
+    $("#portfolio a").each((index, element) => {
+      if (index % 2 == 0) {
+        $(element).html("Visit");
+      }
+      if (index % 2 != 0) {
+        $(element).html("Repository");
+      }
+    });
+  } else {
+    $("#portfolio h1").html("Projetos");
+    $("#portfolio a").each((index, element) => {
+      if (index % 2 == 0) {
+        $(element).html("Acesse");
+      }
+      if (index % 2 != 0) {
+        $(element).html("Repositório");
+      }
+    });
+  }
+});
