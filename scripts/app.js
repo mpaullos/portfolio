@@ -103,3 +103,17 @@ const homeTranslate = $(".dropdown-menu").click(function () {
     );
   }
 });
+
+const aboutTranslate = $(".dropdown-menu").click(function () {
+  if (!check) {
+    $("#sobre h4").html("Who am i");
+    $("#sobre p").html(
+      "<p class='about'>My name is Marcos Paulo, but many call me 'MP' which is the abbreviation of my name, or my tag in terms of html. I started my first steps in programming like many, with a simple Hello Word. I am currently looking for the first opportunity in the area of Web Development, despitehaving received a few 'no', programmers never give up. In addition, I am also an Information Systems student. Anyway, thanks for visiting!</p>"
+    );
+  } else {
+    $("#sobre h4").html("Quem sou");
+    $("#sobre p").html(
+      "<p class='about'>Meu nome é Marcos Paulo, mas muitos me chamam de 'MP' que é a abreviação do meu nome, ou a minha tag em termos de html. Comecei meus primeiros passos na programação como muitos, com um simples Hello Word. Atualmente procuro a primeira oportunidade na área de Desenvolvimento Web, apesarde ter recebido alguns 'nãos', programadores nunca desistem. Além disso, também sou estudante de Sistemas de Informação. No mais, obrigado pela visita!</p>"
+    );
+  }
+});
