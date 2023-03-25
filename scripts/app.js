@@ -141,3 +141,11 @@ const portfolioTranslate = $(".dropdown-menu").click(function () {
     });
   }
 });
+
+const knowledgeTranslate = $(".dropdown-menu").click(function () {
+  if (!check) {
+    $("#conhecimentos h1").html("<h1 class='text-center mt-5'>Knowledge <span>|</span> <span class='teste'></span></h1>");
+  } else {
+    $("#conhecimentos h1").html("<h1 class='text-center mt-5'>Conhecimentos <span>|</span> <span class='teste'></span></h1>");
+  }
+});
