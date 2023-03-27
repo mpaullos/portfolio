@@ -325,6 +325,7 @@ footer p {
 
 @media (max-width: 1028px) {
   /* Navbar */
+  
   .socials {
     margin-left: 0;
     margin-right: 0;
@@ -348,7 +349,7 @@ footer p {
   /* Sobre */
   #sobre {
     background-color: black;
-    height: 740px;
+    height: 1028px;
     margin-top: 160px;
   }
   
@@ -397,6 +398,16 @@ footer p {
     background-color: black;
     border-radius: 10%;
     margin-right: 10px;
+  }
+
+
+  /* Portfólio */
+  #portfolio {
+    padding-top: 40px;
+  }
+
+  .repo {
+    flex-wrap: wrap;
   }
 
   
