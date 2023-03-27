@@ -149,3 +149,14 @@ const knowledgeTranslate = $(".dropdown-menu").click(function () {
     $("#conhecimentos h1").html("<h1 class='text-center mt-5'>Conhecimentos <span>|</span> <span class='teste'></span></h1>");
   }
 });
+
+/* Navbar Collapse Fix */
+const navLinks = $(".nav-item");
+console.log(navLinks);
+const menuToggle = $("#navbarNav");
+const bsCollapse = new bootstrap.Collapse(menuToggle);
+navLinks.each((index, element) => {
+  $(element).click(() => {
+    bsCollapse.toggle();
+  });
+});
