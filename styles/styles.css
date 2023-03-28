@@ -325,11 +325,38 @@ footer p {
 
 @media (max-width: 1028px) {
   /* Navbar */
-  
+  .nav-item {
+    text-align: center;
+    font-size: 24px;
+    
+  }
+ 
+  #navbarNav {
+    text-align: center;
+    position: absolute;
+    top: 78px;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: #09090b;
+    flex-direction: column;
+    padding-top: 96px;
+    
+  }
+  .container-fluid {
+    padding: 0 8px;
+  }
   .socials {
     margin-left: 0;
     margin-right: 0;
   }
+
+  .collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
 
   /* Home */
   h1 {
