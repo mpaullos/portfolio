@@ -151,12 +151,18 @@ const knowledgeTranslate = $(".dropdown-menu").click(function () {
 });
 
 /* Navbar Collapse Fix */
-const navLinks = $(".nav-item");
-console.log(navLinks);
-const menuToggle = $("#navbarNav");
-const bsCollapse = new bootstrap.Collapse(menuToggle);
-navLinks.each((index, element) => {
-  $(element).click(() => {
-    bsCollapse.toggle();
-  });
+const fixNavLinks = $("#navbarNav .nav-item").each((index, element) => {
+  if (index === 7) {
+    $(element).click(() => {
+      $(".dropdown-item").click(() => {
+        $("#navbarNav").removeClass("show");
+      });
+    });
+  } else {
+    $(element).click(() => {
+      $("#navbarNav").removeClass("show");
+    });
+  }
 });
+
+
