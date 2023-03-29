@@ -324,7 +324,7 @@ footer p {
   margin: 20px 10px;
 }
 
-/* Media Querrys */
+/* Media Queries */
 
 @media (max-width: 1028px) {
   /* Navbar */
@@ -384,23 +384,28 @@ footer p {
     background-color: black;
     height: 1028px;
     margin-top: 160px;
+    padding: 72px 20px;
   }
   
   .profile {
     background-color: #09090b;
     border: 2px solid #101013;
     padding: 20px;
+    margin: 0;
     position: relative;
     top: 80px;
-    height: 1028px;
+    height: auto;
+    
+   
   }
   
   .profile-picture {
-    width: 320px;
-    height: 300px;
+    max-width: 100%;
+    min-width: 200px;
+    height: auto;
     padding: 0;
     position: relative;
-    top: -10px;
+    top: 5px;
   }
   
   h4 {
@@ -426,13 +431,11 @@ footer p {
   }
   
   button {
-    padding: 16px;
-    border: 2px solid #101013;
-    background-color: black;
-    border-radius: 10%;
-    margin-right: 10px;
+    width: 47px;
+    height: 47px;
+    justify-content: center;
+    padding: 5px;
   }
-
 
   /* Portfólio */
   #portfolio {
