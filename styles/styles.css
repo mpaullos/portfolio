@@ -141,7 +141,7 @@ h3 {
   margin: 20px 0 20px 0;
 }
 
-button {
+.social-button {
   padding: 16px;
   border: 2px solid #101013;
   background-color: black;
@@ -149,7 +149,7 @@ button {
   margin-right: 10px;
 }
 
-button:hover {
+.social-button:hover {
   border-color: #58d9dd;
 }
 
@@ -362,6 +362,9 @@ footer p {
 }
 
   /* Home */
+  .logos {
+    display: none;
+  }
   h1 {
     font-size: 2.8rem;
     text-align: center;
@@ -384,7 +387,7 @@ footer p {
     background-color: black;
     height: 1028px;
     margin-top: 160px;
-    padding: 72px 20px;
+    padding: 72px 12px;
   }
   
   .profile {
@@ -430,9 +433,9 @@ footer p {
     margin: 20px 0 20px 0;
   }
   
-  button {
-    width: 47px;
-    height: 47px;
+  .social-button {
+    width: 60px;
+    height: 60px;
     justify-content: center;
     padding: 5px;
   }
