@@ -306,6 +306,9 @@ button:hover {
   width: 100%;
 }
 
+.swiper-pagination-bullet {
+  background-color: rgb(12, 177, 237);
+}
 /* Contact */
 
 #contato {
