@@ -120,7 +120,7 @@ const aboutTranslate = $(".dropdown-menu").click(function () {
 
 const portfolioTranslate = $(".dropdown-menu").click(function () {
   if (!check) {
-    $("#portfolio h1").html("Projects");
+    $("#portfolio h1").html("Projects<span> |<span>");
     $("#portfolio a").each((index, element) => {
       if (index % 2 == 0) {
         $(element).html("Visit");
@@ -130,7 +130,7 @@ const portfolioTranslate = $(".dropdown-menu").click(function () {
       }
     });
   } else {
-    $("#portfolio h1").html("Projetos");
+    $("#portfolio h1").html("Projetos<span> |<span>");
     $("#portfolio a").each((index, element) => {
       if (index % 2 == 0) {
         $(element).html("Acesse");
