@@ -231,10 +231,10 @@ h3 {
 }
 
 .btn {
-  margin-top: 190px;
+  margin: 190px 10px 0 0;
+  justify-content: space-between;
   border-radius: 24px;
   width: 120px;
-  height: 60px;
   display: none;
   background-color: rgba(31, 27, 27, 0.526);
   border-color: #ffffff;
