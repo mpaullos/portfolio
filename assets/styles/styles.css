@@ -453,5 +453,32 @@ footer p {
     flex-wrap: wrap;
   }
 
+  .tindog {
+    width: 600px;
+    height: 270px;
+    margin-bottom: 20px;
+    border: 3px solid #ffffff;
+    background-image: url("https://user-images.githubusercontent.com/82289818/205789643-9cf82fda-ad0a-4f06-aae5-2a483dc60968.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .newsletter {
+    width: 600px;
+    height: 270px;
+    margin-bottom: 20px;
+    border: 3px solid #ffffff;
+    background-image: url("https://user-images.githubusercontent.com/82289818/209544837-335d2e0d-280c-4dbc-a7ce-2522fd345685.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  /* Conhecimentos */
+  #conhecimentos h1 {
+    font-size: 1.9rem;
+  }
+  
+
   
 }
