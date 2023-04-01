@@ -39,11 +39,49 @@ a {
   /* margin-right: 20px; */
 }
 
-.nav-link:hover {
-  color: #58d9dd !important;
+/* .nav-link:hover {
+  text-decoration: underline;
+  color: #132cac;
+} */ 
+
+.nav-item {
+  margin-left: 18px;
+}
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  
+  
+}
+.decoration-link:hover {
+  color: #ffffff;
+}
+
+.decoration-link::after {
+  position: absolute;
+  content: "";
+  background-color: #ff3c78;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 6px;
+  transition: all 0.3s;
+  
+}
+
+.decoration-link:hover::after {
+  width: 100%;
+  
+}
+
+.icons:hover {
+  color: #1f7dc0;
 }
 
 
+.dropdown-menu  {
+  background-color: #ffffff;
+}
 .brazil-flag, .us-flag {
   width: 1.5em;
   
@@ -331,6 +369,13 @@ footer p {
   .nav-item {
     text-align: center;
     font-size: 24px;
+    
+  }
+
+  .decoration-link:hover::after {
+    width: 40%;
+    margin-left: 80px;
+    left: 30px;
     
   }
  
