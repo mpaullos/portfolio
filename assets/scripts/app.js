@@ -166,3 +166,11 @@ const fixNavLinks = $("#navbarNav .nav-item").each((index, element) => {
 });
 
 
+const sr = ScrollReveal({
+  origin: "left",
+  distance: "50px",
+  duration: 2000,
+});
+
+sr.reveal(".delayReveal", { delay: 200 });
+sr.reveal(".mediumReveal", { delay: 300 });
