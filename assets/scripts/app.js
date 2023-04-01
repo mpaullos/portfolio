@@ -165,12 +165,14 @@ const fixNavLinks = $("#navbarNav .nav-item").each((index, element) => {
   }
 });
 
-
+/* Scroll reveal */
 const sr = ScrollReveal({
-  origin: "left",
   distance: "50px",
   duration: 2000,
 });
 
-sr.reveal(".delayReveal", { delay: 200 });
-sr.reveal(".mediumReveal", { delay: 300 });
+sr.reveal(".leftReveal" ,{origin:"left"},{ delay: 200 });
+sr.reveal(".rightReveal", {origin:"right"},{ delay: 300 });
+sr.reveal(".topReveal", {origin:"top"},{ delay: 400 });
+sr.reveal(".bottomReveal", {origin:"bottom"},{ delay: 600 });
+
