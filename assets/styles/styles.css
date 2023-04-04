@@ -27,7 +27,7 @@ a {
 .container-fluid {
   padding: 0% 8%;
   font-size: 1.4rem;
-  border-bottom: 1px solid #1f7dc0;
+  border-bottom: 1px solid #171a1a;
 }
 
 .navbar-brand {
@@ -58,7 +58,7 @@ a {
 .decoration-link::after {
   position: absolute;
   content: "";
-  background-color: #ff3c78;
+  background-color: #0cdf91;
   height: 2px;
   width: 0;
   left: 0;
@@ -71,7 +71,7 @@ a {
 }
 
 .icons:hover {
-  color: #1f7dc0;
+  color: #0cdf91;
 }
 
 .dropdown-menu {
@@ -114,7 +114,7 @@ p {
 }
 
 span {
-  color: #58d9dd;
+  color: #0cdf91;
 }
 
 .logos {
@@ -152,7 +152,7 @@ span {
 }
 
 h4 {
-  color: #58d9dd;
+  color: #0cdf91;
 }
 
 h2 {
@@ -182,11 +182,11 @@ h3 {
 }
 
 .social-button:hover {
-  border-color: #58d9dd;
+  border-color: #0cdf91;
 }
 
 .brand-color {
-  color: #58d9dd;
+  color: #0cdf91;
 }
 
 /* Portfólio */
@@ -339,7 +339,7 @@ h3 {
 }
 
 .swiper-pagination-bullet {
-  background-color: rgb(12, 177, 237);
+  background-color: #0cdf91;
 }
 /* Contact */
 
@@ -407,6 +407,7 @@ footer p {
   }
 
   /* Home */
+
   .logos {
     display: none;
   }
@@ -453,9 +454,6 @@ footer p {
     top: 5px;
   }
 
-  h4 {
-    color: #58d9dd;
-  }
 
   h2 {
     font-size: 2.1rem;
