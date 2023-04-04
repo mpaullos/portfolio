@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: #000000;
   /* remover cor azul em duplo clique */
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -89,7 +89,7 @@ a {
 
 #home {
   padding: 200px 0;
-  height: 500px;
+  height: 612px;
   background-color: black;
   /* border-bottom: 1px solid #1f7dc0; */
   /* max-width: 1140px; an image references*/
@@ -131,7 +131,7 @@ span {
 #sobre {
   background-color: black;
   height: 740px;
-  margin-top: 160px;
+  margin-top: -3px;
 }
 
 .profile {
