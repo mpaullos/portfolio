@@ -156,11 +156,13 @@ const fixNavLinks = $("#navbarNav .nav-item").each((index, element) => {
     $(element).click(() => {
       $(".dropdown-item").click(() => {
         $("#navbarNav").removeClass("show");
+        $(".navbar-toggler").addClass("collapsed");
       });
     });
   } else {
     $(element).click(() => {
       $("#navbarNav").removeClass("show");
+      $(".navbar-toggler").addClass("collapsed");
     });
   }
 });
@@ -171,8 +173,7 @@ const sr = ScrollReveal({
   duration: 2000,
 });
 
-sr.reveal(".leftReveal" ,{origin:"left"},{ delay: 200 });
-sr.reveal(".rightReveal", {origin:"right"},{ delay: 300 });
-sr.reveal(".topReveal", {origin:"top"},{ delay: 400 });
-sr.reveal(".bottomReveal", {origin:"bottom"},{ delay: 600 });
-
+sr.reveal(".leftReveal", { origin: "left" }, { delay: 200 });
+sr.reveal(".rightReveal", { origin: "right" }, { delay: 300 });
+sr.reveal(".topReveal", { origin: "top" }, { delay: 400 });
+sr.reveal(".bottomReveal", { origin: "bottom" }, { delay: 600 });
