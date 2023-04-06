@@ -99,7 +99,7 @@ const homeTranslate = $(".dropdown-menu").click(function () {
   } else {
     $("#home h1").html("Olá, meu nome é <span>Marcos Paulo</span> <br />Eu sou um <span>Front-End Developer</span>");
     $("#home p").html(
-      "<p>Eu construí alguns sites com o intuito de melhorar as minhas habilidades. Então resolvi condensar essas construções em um único local. Possuo habilidades em <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span>, <span>Bootstrap</span>, <span>Node.Js</span>, e <span>SQL</span>, por equanto!</p>"
+      "<p>Eu construí alguns sites com o intuito de melhorar as minhas habilidades. Então resolvi condensar essas construções em um único local. Possuo habilidades em <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span>, <span>Bootstrap</span>, <span>Node.Js</span>, e <span>SQL</span>, por enquanto!</p>"
     );
   }
 });
