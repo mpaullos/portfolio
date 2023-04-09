@@ -177,3 +177,9 @@ sr.reveal(".leftReveal", { origin: "left" }, { delay: 200 });
 sr.reveal(".rightReveal", { origin: "right" }, { delay: 300 });
 sr.reveal(".topReveal", { origin: "top" }, { delay: 400 });
 sr.reveal(".bottomReveal", { origin: "bottom" }, { delay: 600 });
+
+/* Copyright Date */
+
+const date = new Date();
+const currentYear = date.getFullYear();
+$(".copyright").append( currentYear);
