@@ -22,6 +22,21 @@ a {
   text-decoration: none;
 }
 
+/* Scroll Bar */
+
+::-webkit-scrollbar-track {
+  background-color: #040405;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0cdf91;
+  border-radius: 8px;
+}
+
 /* Navbar */
 
 .container-fluid {
@@ -570,7 +585,6 @@ footer p {
 
   .nav-link {
     font-size: 2rem;
-    
   }
 
   .navbar-brand {
@@ -583,7 +597,6 @@ footer p {
   #home {
     height: 800px;
     padding: 300px 0px;
-   
   }
 
   .logos {
