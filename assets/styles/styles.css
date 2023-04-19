@@ -578,6 +578,13 @@ footer p {
   }
 }
 
+
+/* Bootstrap defaults */
+.nav-item.dropdown .dropdown-item:active {
+  background-color: #fff !important;
+}
+
+
 @media (min-width: 1920px) {
   .container-fluid {
     padding: 0% 15%;
