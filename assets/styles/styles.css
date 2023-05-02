@@ -584,6 +584,9 @@ footer p {
   background-color: #fff !important;
 }
 
+.btn-primary:hover {
+  border-color: #0cdf91 !important;
+}
 
 @media (min-width: 1920px) {
   .container-fluid {
