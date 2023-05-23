@@ -16,7 +16,18 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 /* knowledge */
-stack = ["HTML5", "CSS3", "Javascript", "Bootstrap", "NodeJs", "Python3", "MongoDB", "JQuery", "SQL"];
+stack = [
+  "HTML5",
+  "CSS3",
+  "Javascript",
+  "React",
+  "Bootstrap",
+  "NodeJs",
+  "Python3",
+  "MongoDB",
+  "JQuery",
+  "SQL",
+];
 $(".swiper-slide").click(function () {
   $(".html5").click(function () {
     $("#conhecimentos .teste").text(stack[0]);
@@ -30,25 +41,29 @@ $(".swiper-slide").click(function () {
     $("#conhecimentos .teste").text(stack[2]);
   });
 
-  $(".bootstrap").click(function () {
+  $(".react").click(function () {
     $("#conhecimentos .teste").text(stack[3]);
   });
 
-  $(".nodejs").click(function () {
+  $(".bootstrap").click(function () {
     $("#conhecimentos .teste").text(stack[4]);
   });
-  $(".python").click(function () {
+
+  $(".nodejs").click(function () {
     $("#conhecimentos .teste").text(stack[5]);
   });
-  $(".mongodb").click(function () {
+  $(".python").click(function () {
     $("#conhecimentos .teste").text(stack[6]);
   });
-  $(".jquery").click(function () {
+  $(".mongodb").click(function () {
     $("#conhecimentos .teste").text(stack[7]);
+  });
+  $(".jquery").click(function () {
+    $("#conhecimentos .teste").text(stack[8]);
   });
 
   $(".sql").click(function () {
-    $("#conhecimentos .teste").text(stack[8]);
+    $("#conhecimentos .teste").text(stack[9]);
   });
 });
 
@@ -92,12 +107,16 @@ const navbarTranslate = $(".dropdown-menu").click(function () {
 
 const homeTranslate = $(".dropdown-menu").click(function () {
   if (!check) {
-    $("#home h1").html("Hello, my name is <span>Marcos Paulo</span> <br />I am a <span>Front-End Developer</span>");
+    $("#home h1").html(
+      "Hello, my name is <span>Marcos Paulo</span> <br />I am a <span>Front-End Developer</span>"
+    );
     $("#home p").html(
       "<p>I built some websites in order to improve my skills. So I decided to condense these constructions into a single location. I have skills in <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span>, <span>Bootstrap</span>, <span>Node.Js</span>, and <span>SQL</span>, for now!</p>"
     );
   } else {
-    $("#home h1").html("Olá, meu nome é <span>Marcos Paulo</span> <br />Eu sou um <span>Front-End Developer</span>");
+    $("#home h1").html(
+      "Olá, meu nome é <span>Marcos Paulo</span> <br />Eu sou um <span>Front-End Developer</span>"
+    );
     $("#home p").html(
       "<p>Eu construí alguns sites com o intuito de melhorar as minhas habilidades. Então resolvi condensar essas construções em um único local. Possuo habilidades em <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span>, <span>Bootstrap</span>, <span>Node.Js</span>, e <span>SQL</span>, por enquanto!</p>"
     );
@@ -144,9 +163,13 @@ const portfolioTranslate = $(".dropdown-menu").click(function () {
 
 const knowledgeTranslate = $(".dropdown-menu").click(function () {
   if (!check) {
-    $("#conhecimentos h1").html("<h1 class='text-center mt-5'>Knowledge <span>|</span> <span class='teste'></span></h1>");
+    $("#conhecimentos h1").html(
+      "<h1 class='text-center mt-5'>Knowledge <span>|</span> <span class='teste'></span></h1>"
+    );
   } else {
-    $("#conhecimentos h1").html("<h1 class='text-center mt-5'>Conhecimentos <span>|</span> <span class='teste'></span></h1>");
+    $("#conhecimentos h1").html(
+      "<h1 class='text-center mt-5'>Conhecimentos <span>|</span> <span class='teste'></span></h1>"
+    );
   }
 });
 
@@ -182,4 +205,4 @@ sr.reveal(".bottomReveal", { origin: "bottom" }, { delay: 600 });
 
 const date = new Date();
 const currentYear = date.getFullYear();
-$(".copyright").append( currentYear);
+$(".copyright").append(currentYear);
