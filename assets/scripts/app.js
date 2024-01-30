@@ -16,56 +16,105 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 /* knowledge */
-stack = [
-  "HTML5",
-  "CSS3",
-  "Javascript",
-  "React",
-  "Bootstrap",
-  "NodeJs",
-  "Python3",
-  "MongoDB",
-  "JQuery",
-  "SQL",
-];
-$(".swiper-slide").click(function () {
-  $(".html5").click(function () {
+stack = ["HTML5", "CSS3", "Javascript", "React", "Bootstrap", "NodeJs", "Python3", "Csharp", "MongoDB", "JQuery", "SQL"];
+
+$(".html5").hover(
+  function () {
     $("#conhecimentos .teste").text(stack[0]);
-  });
+  },
+  function () {
+    $("#conhecimentos .teste").text("");
+  }
+);
 
-  $(".css3").click(function () {
+$(".css3").hover(
+  function () {
     $("#conhecimentos .teste").text(stack[1]);
-  });
+  },
+  function () {
+    $("#conhecimentos .teste").text("");
+  }
+);
 
-  $(".js").click(function () {
+$(".js").hover(
+  function () {
     $("#conhecimentos .teste").text(stack[2]);
-  });
+  },
+  function () {
+    $("#conhecimentos .teste").text("");
+  }
+);
 
-  $(".react").click(function () {
+$(".react").hover(
+  function () {
     $("#conhecimentos .teste").text(stack[3]);
-  });
+  },
+  function () {
+    $("#conhecimentos .teste").text("");
+  }
+);
 
-  $(".bootstrap").click(function () {
+$(".bootstrap").hover(
+  function () {
     $("#conhecimentos .teste").text(stack[4]);
-  });
+  },
+  function () {
+    $("#conhecimentos .teste").text("");
+  }
+);
 
-  $(".nodejs").click(function () {
+$(".nodejs").hover(
+  function () {
     $("#conhecimentos .teste").text(stack[5]);
-  });
-  $(".python").click(function () {
-    $("#conhecimentos .teste").text(stack[6]);
-  });
-  $(".mongodb").click(function () {
-    $("#conhecimentos .teste").text(stack[7]);
-  });
-  $(".jquery").click(function () {
-    $("#conhecimentos .teste").text(stack[8]);
-  });
+  },
+  function () {
+    $("#conhecimentos .teste").text("");
+  }
+);
 
-  $(".sql").click(function () {
+$(".python").hover(
+  function () {
+    $("#conhecimentos .teste").text(stack[6]);
+  },
+  function () {
+    $("#conhecimentos .teste").text("");
+  }
+);
+
+$(".csharp").hover(
+  function () {
+    $("#conhecimentos .teste").text(stack[7]);
+  },
+  function () {
+    $("#conhecimentos .teste").text("");
+  }
+);
+
+$(".mongodb").hover(
+  function () {
+    $("#conhecimentos .teste").text(stack[8]);
+  },
+  function () {
+    $("#conhecimentos .teste").text("");
+  }
+);
+$(".jquery").hover(
+  function () {
     $("#conhecimentos .teste").text(stack[9]);
-  });
-});
+  },
+  function () {
+    $("#conhecimentos .teste").text("");
+  }
+);
+
+$(".sql").hover(
+  function () {
+    $("#conhecimentos .teste").text(stack[10]);
+  },
+  function () {
+    $("#conhecimentos .teste").text("");
+  }
+);
 
 /* Translate */
 check = true;
@@ -107,33 +156,21 @@ const navbarTranslate = $(".dropdown-menu").click(function () {
 
 const homeTranslate = $(".dropdown-menu").click(function () {
   if (!check) {
-    $("#home h1").html(
-      "Hello, my name is <span>Marcos Paulo</span> <br />I am a <span>Front-End Developer</span>"
-    );
-    $("#home p").html(
-      "<p>I built some websites in order to improve my skills. So I decided to condense these constructions into a single location. I have skills in <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span>, <span>Bootstrap</span>, <span>Node.Js</span>, and <span>SQL</span>, for now!</p>"
-    );
+    $("#home h1").html("Hello, my name is <span>Marcos Paulo</span> <br />I am a <span>Front-End Developer</span>");
+    $("#home p").html("<p>I built some websites in order to improve my skills. So I decided to condense these constructions into a single location. I have skills in <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span>, <span>Bootstrap</span>, <span>Node.Js</span>, and <span>SQL</span>, for now!</p>");
   } else {
-    $("#home h1").html(
-      "Olá, meu nome é <span>Marcos Paulo</span> <br />Eu sou um <span>Front-End Developer</span>"
-    );
-    $("#home p").html(
-      "<p>Eu construí alguns sites com o intuito de melhorar as minhas habilidades. Então resolvi condensar essas construções em um único local. Possuo habilidades em <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span>, <span>Bootstrap</span>, <span>Node.Js</span>, e <span>SQL</span>, por enquanto!</p>"
-    );
+    $("#home h1").html("Olá, meu nome é <span>Marcos Paulo</span> <br />Eu sou um <span>Front-End Developer</span>");
+    $("#home p").html("<p>Eu construí alguns sites com o intuito de melhorar as minhas habilidades. Então resolvi condensar essas construções em um único local. Possuo habilidades em <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span>, <span>Bootstrap</span>, <span>Node.Js</span>, e <span>SQL</span>, por enquanto!</p>");
   }
 });
 
 const aboutTranslate = $(".dropdown-menu").click(function () {
   if (!check) {
     $("#sobre h4").html("Who am i");
-    $("#sobre p").html(
-      "<p class='about'>My name is Marcos Paulo, but many call me 'MP' which is the abbreviation of my name, or my tag in terms of html. I started my first steps in programming like many, with a simple Hello World. I am currently looking for the first opportunity in the area of Web Development, despitehaving received a few 'no', programmers never give up. In addition, I am also an Information Systems student. Anyway, thanks for visiting!</p>"
-    );
+    $("#sobre p").html("<p class='about'>My name is Marcos Paulo, but many call me 'MP' which is the abbreviation of my name, or my tag in terms of html. I started my first steps in programming like many, with a simple Hello World. I am currently looking for the first opportunity in the area of Web Development, despitehaving received a few 'no', programmers never give up. In addition, I am also an Information Systems student. Anyway, thanks for visiting!</p>");
   } else {
     $("#sobre h4").html("Quem sou");
-    $("#sobre p").html(
-      "<p class='about'>Meu nome é Marcos Paulo, mas muitos me chamam de 'MP' que é a abreviação do meu nome, ou a minha tag em termos de html. Comecei meus primeiros passos na programação como muitos, com um simples Hello World. Atualmente procuro a primeira oportunidade na área de Desenvolvimento Web, apesarde ter recebido alguns 'nãos', programadores nunca desistem. Além disso, também sou estudante de Sistemas de Informação. No mais, obrigado pela visita!</p>"
-    );
+    $("#sobre p").html("<p class='about'>Meu nome é Marcos Paulo, mas muitos me chamam de 'MP' que é a abreviação do meu nome, ou a minha tag em termos de html. Comecei meus primeiros passos na programação como muitos, com um simples Hello World. Atualmente procuro a primeira oportunidade na área de Desenvolvimento Web, apesarde ter recebido alguns 'nãos', programadores nunca desistem. Além disso, também sou estudante de Sistemas de Informação. No mais, obrigado pela visita!</p>");
   }
 });
 
@@ -163,13 +200,9 @@ const portfolioTranslate = $(".dropdown-menu").click(function () {
 
 const knowledgeTranslate = $(".dropdown-menu").click(function () {
   if (!check) {
-    $("#conhecimentos h1").html(
-      "<h1 class='text-center mt-5'>Knowledge <span>|</span> <span class='teste'></span></h1>"
-    );
+    $("#conhecimentos h1").html("<h1 class='text-center mt-5'>Knowledge <span>|</span> <span class='teste'></span></h1>");
   } else {
-    $("#conhecimentos h1").html(
-      "<h1 class='text-center mt-5'>Conhecimentos <span>|</span> <span class='teste'></span></h1>"
-    );
+    $("#conhecimentos h1").html("<h1 class='text-center mt-5'>Conhecimentos <span>|</span> <span class='teste'></span></h1>");
   }
 });
 
@@ -205,4 +238,4 @@ sr.reveal(".bottomReveal", { origin: "bottom" }, { delay: 600 });
 
 const date = new Date();
 const currentYear = date.getFullYear();
-$(".copyright").append(currentYear);
+$(".copyright").append(" - " + currentYear);
