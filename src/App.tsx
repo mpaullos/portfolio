@@ -1,20 +1,17 @@
-import { Navbar } from "./components/Navbar";
+import Navbar from "./components/Navbar";
 
-function App() {
+export default function App() {
   return (
-    <div className="bg-zinc-950 text-white">
+    <div
+      className="min-h-screen bg-white dark:bg-zinc-950
+                    text-zinc-900 dark:text-zinc-100 transition-colors"
+    >
       <Navbar />
 
-      <main className="pt-16">
-        <section
-          id="home"
-          className="h-screen flex items-center justify-center"
-        >
-          <h1 className="text-4xl font-bold">Home</h1>
-        </section>
+      {/* Espaço temporário */}
+      <main className="pt-24 flex justify-center">
+        <h1 className="text-4xl font-bold">Portfolio em construção 🚀</h1>
       </main>
     </div>
   );
 }
-
-export default App;
