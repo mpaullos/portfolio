@@ -1,29 +1,36 @@
+import holy from "../assets/projects/holy-summer.png";
+import simon from "../assets/projects/simon-game.png";
+import weather from "../assets/projects/weather-app.png";
+
 export const projects = [
   {
     title: "Holy Summer",
+    image: holy,
+    highlight: "Layout moderno e responsivo",
     description:
-      "Landing page moderna com foco em conversão, responsividade e boas práticas de front-end.",
-    techs: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      "Landing page focada em conversão, responsividade e boas práticas de UI.",
+    techs: ["HTML", "CSS", "JavaScript"],
     live: "https://mpaullos.github.io/holy-summer/",
     repo: "https://github.com/mpaullos/holy-summer",
-    highlight: "Layout moderno e responsivo",
   },
   {
     title: "Simon Game",
+    image: simon,
+    highlight: "Lógica e interatividade",
     description:
-      "Jogo interativo com lógica de estados, feedback visual e manipulação de eventos.",
+      "Jogo interativo com controle de estado, eventos e feedback visual.",
     techs: ["JavaScript", "HTML", "CSS"],
     live: "https://simon-game-bice.vercel.app/",
     repo: "https://github.com/mpaullos/simon-game",
-    highlight: "Lógica e interatividade",
   },
   {
     title: "Weather App",
-    description:
-      "Aplicação que consome API externa para exibir dados climáticos em tempo real.",
-    techs: ["Node.js", "Express", "API"],
-    live: "https://weather-project-snowy-nine.vercel.app/",
-    repo: "https://github.com/mpaullos/WeatherProject",
+    image: weather,
     highlight: "Consumo de API",
+    description:
+      "Aplicação que consome API externa para dados climáticos em tempo real.",
+    techs: ["Node.js", "Express", "API"],
+    live: "https://glorious-elk-kit.cyclic.app/",
+    repo: "https://github.com/mpaullos/WeatherProject",
   },
 ];

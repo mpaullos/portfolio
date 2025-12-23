@@ -27,6 +27,16 @@ export default function Projects() {
                 hover:-translate-y-1 hover:shadow-xl
               "
             >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="
+                  mb-5 rounded-xl 
+                  border border-zinc-200 dark:border-zinc-800
+                  group-hover:scale-[1.02]
+                  transition-transform duration-300
+                "
+              />
               {/* Highlight */}
               <span
                 className="
