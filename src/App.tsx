@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
+import Projects from "./sections/Projects";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
 
       <main>
         <Hero />
+        <Projects />
       </main>
     </div>
   );
