@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Hero from "./sections/Hero";
 
 export default function App() {
   return (
@@ -8,9 +9,8 @@ export default function App() {
     >
       <Navbar />
 
-      {/* Espaço temporário */}
-      <main className="pt-24 flex justify-center">
-        <h1 className="text-4xl font-bold">Portfolio em construção 🚀</h1>
+      <main>
+        <Hero />
       </main>
     </div>
   );
