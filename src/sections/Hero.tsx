@@ -1,52 +1,70 @@
+import { Github, Linkedin, Mail } from "lucide-react";
+import GradientText from "../components/GradientText";
+
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-24">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="max-w-3xl">
-          {/* Badge */}
-          <span
-            className="inline-block mb-6 px-4 py-1 text-sm rounded-full
-                           bg-indigo-50 text-indigo-600
-                           dark:bg-indigo-500/10 dark:text-indigo-400"
-          >
-            Front-end Developer
-          </span>
+    <section className="relative min-h-screen flex items-center pt-32 pb-24">
+      <div className="max-w-6xl mx-auto px-6 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-16 items-center">
+          {/* LEFT SIDE */}
+          <div>
+            {/* Name */}
+            <p className="text-lg text-zinc-600 dark:text-zinc-400">
+              I'm Marcos Paulo
+            </p>
 
-          {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-            Construo interfaces
-            <span className="block text-indigo-600 dark:text-indigo-400">
-              modernas, acessíveis
-            </span>
-            e focadas em produto
-          </h1>
-
-          {/* Subheadline */}
-          <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
-            Desenvolvedor front-end com foco em React, performance e experiência
-            do usuário. Busco oportunidades para criar produtos sólidos e bem
-            projetados.
-          </p>
-
-          {/* CTAs */}
-          <div className="mt-10 flex flex-wrap gap-4">
-            <a
-              href="#projects"
-              className="px-6 py-3 rounded-lg bg-indigo-600 text-white
-                         hover:bg-indigo-700 transition-colors"
+            {/* Gradient Title */}
+            <GradientText
+              colors={["#f0abfc", "#9333ea", "#f0abfc", "#9333ea", "#f0abfc"]}
+              animationSpeed={8}
+              showBorder={false}
+              className="mt-2 text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight"
             >
-              Ver projetos
-            </a>
+              FullStack Developer
+            </GradientText>
 
-            <a
-              href="#contact"
-              className="px-6 py-3 rounded-lg border border-zinc-300
-                         dark:border-zinc-700
-                         hover:bg-zinc-100 dark:hover:bg-zinc-800
-                         transition-colors"
-            >
-              Entrar em contato
-            </a>
+            {/* Social Icons */}
+            <div className="mt-10 flex gap-6">
+              <a
+                href="https://github.com/mpaullos"
+                target="_blank"
+                aria-label="GitHub"
+                className="p-3 rounded-full border border-zinc-300 dark:border-zinc-700
+                           hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all
+                           hover:scale-110"
+              >
+                <Github className="w-6 h-6" />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/mpaullos"
+                target="_blank"
+                aria-label="LinkedIn"
+                className="p-3 rounded-full border border-zinc-300 dark:border-zinc-700
+                           hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all
+                           hover:scale-110"
+              >
+                <Linkedin className="w-6 h-6" />
+              </a>
+
+              <a
+                href="mailto:seuemail@email.com"
+                aria-label="Email"
+                className="p-3 rounded-full border border-zinc-300 dark:border-zinc-700
+                           hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all
+                           hover:scale-110"
+              >
+                <Mail className="w-6 h-6" />
+              </a>
+            </div>
+          </div>
+
+          {/* RIGHT SIDE */}
+          <div>
+            <p className="text-2xl sm:text-3xl lg:text-4xl font-medium leading-tight text-zinc-800 dark:text-zinc-200">
+              I build reliable, scalable and user-focused digital experiences,
+              turning ideas into clean and efficient products.
+            </p>
           </div>
         </div>
       </div>
