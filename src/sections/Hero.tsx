@@ -1,9 +1,31 @@
 import { Github, Linkedin, Mail } from "lucide-react";
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+} from "react-icons/si";
 import GradientText from "../components/GradientText";
+import LogoLoop from "../components/LogoLoop";
+
+const techLogos = [
+  { node: <SiReact />, title: "React", href: "https://react.dev" },
+  { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
+  {
+    node: <SiTypescript />,
+    title: "TypeScript",
+    href: "https://www.typescriptlang.org",
+  },
+  {
+    node: <SiTailwindcss />,
+    title: "Tailwind CSS",
+    href: "https://tailwindcss.com",
+  },
+];
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-32 pb-24">
+    <section className="relative min-h-screen flex flex-col justify-center pt-32">
       <div className="max-w-6xl mx-auto px-6 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-16 items-center">
           {/* LEFT SIDE */}
@@ -15,7 +37,7 @@ export default function Hero() {
 
             {/* Gradient Title */}
             <GradientText
-              colors={["#f0abfc", "#9333ea", "#f0abfc", "#9333ea", "#f0abfc"]}
+              colors={["#f5d0fe", "#c084fc", "#9333ea", "#c084fc", "#f5d0fe"]}
               animationSpeed={8}
               showBorder={false}
               className="mt-2 text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight"
@@ -66,6 +88,23 @@ export default function Hero() {
               turning ideas into clean and efficient products.
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* STACKS BELOW HERO */}
+      <div className="mt-24 max-w-6xl mx-auto px-6 w-full">
+        <div className="relative h-30 overflow-hidden">
+          <LogoLoop
+            logos={techLogos}
+            speed={50}
+            direction="left"
+            logoHeight={48}
+            gap={48}
+            hoverSpeed={0}
+            scaleOnHover
+            fadeOut
+            ariaLabel="Technology stack"
+          />
         </div>
       </div>
     </section>
