@@ -37,9 +37,7 @@ export default function Hero() {
 
             {/* Gradient Title */}
             <GradientText
-              colors={["#f5d0fe", "#c084fc", "#9333ea", "#c084fc", "#f5d0fe"]}
-              animationSpeed={8}
-              showBorder={false}
+              animationSpeed={5}
               className="mt-2 text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight"
             >
               FullStack Developer
