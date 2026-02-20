@@ -17,39 +17,38 @@ export default function Navbar() {
     <>
       {/* ================= DESKTOP NAV ================= */}
       <nav
-        className={`
+        className="
           hidden md:block
           fixed top-6 left-1/2 -translate-x-1/2 z-50
-          transition-all duration-500
-          ${
-            isScrolled
-              ? "bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl shadow-lg border border-black/5 dark:border-white/10"
-              : "bg-transparent shadow-none border-none"
-          }
-          rounded-full
-        `}
+          bg-yellow-300
+          border-4 border-black
+          shadow-[8px_8px_0px_0px_black]
+          transition-all duration-300
+        "
         style={{
-          width: isScrolled ? "900px" : "1000px",
+          width: isScrolled ? "850px" : "950px",
         }}
       >
-        <div className="grid grid-cols-3 items-center px-8 py-3">
+        <div className="grid grid-cols-3 items-center px-8 py-4">
           {/* Logo */}
-          <div className="flex items-center gap-2 text-zinc-800 dark:text-zinc-100">
-            <Code2 size={22} />
-            <span className="text-sm font-medium">Marcos.dev</span>
+          <div className="flex items-center gap-3 font-bold text-black">
+            <Code2 size={24} strokeWidth={3} />
+            <span className="text-lg">Marcos.dev</span>
           </div>
 
           {/* Menu central */}
-          <ul className="flex justify-center gap-8">
+          <ul className="flex justify-center gap-6">
             {navItems.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
                   className="
-                    text-sm font-medium
-                    text-zinc-700 dark:text-zinc-200
-                    hover:text-indigo-500
-                    transition-colors
+                    relative px-3 py-1
+                    font-bold text-black
+                    border-2 border-transparent
+                    hover:border-black
+                    hover:bg-pink-400
+                    transition-all
                   "
                 >
                   {item.label}
@@ -71,15 +70,14 @@ export default function Navbar() {
           md:hidden
           fixed top-0 inset-x-0 z-50
           flex items-center justify-between
-          px-4 py-3
-          bg-white/80 dark:bg-zinc-900/80
-          backdrop-blur-md
-          border-b border-black/5 dark:border-white/10
+          px-4 py-4
+          bg-yellow-300
+          border-b-4 border-black
         "
       >
-        <div className="flex items-center gap-2 text-zinc-800 dark:text-zinc-100">
-          <Code2 size={20} />
-          <span className="text-sm font-medium">Marcos.dev</span>
+        <div className="flex items-center gap-2 font-bold text-black">
+          <Code2 size={22} strokeWidth={3} />
+          Marcos.dev
         </div>
 
         <ThemeToggle />
@@ -90,12 +88,11 @@ export default function Navbar() {
         className="
           md:hidden
           fixed bottom-0 inset-x-0 z-50
-          bg-white/90 dark:bg-zinc-900/90
-          backdrop-blur-xl
-          border-t border-black/5 dark:border-white/10
+          bg-pink-400
+          border-t-4 border-black
         "
       >
-        <ul className="flex justify-around py-2">
+        <ul className="flex justify-around py-3">
           {navItems.map((item) => {
             const Icon = item.icon;
             return (
@@ -104,12 +101,12 @@ export default function Navbar() {
                   href={item.href}
                   className="
                     flex flex-col items-center gap-1
-                    text-xs
-                    text-zinc-600 dark:text-zinc-300
-                    hover:text-indigo-500 transition
+                    text-xs font-bold text-black
+                    transition-transform
+                    active:translate-y-1
                   "
                 >
-                  <Icon size={22} />
+                  <Icon size={22} strokeWidth={3} />
                   {item.label}
                 </a>
               </li>
