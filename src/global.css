@@ -62,8 +62,8 @@
   --font-weight-base: 500;
   --font-weight-heading: 700;
 
-  --animate-marquee: marquee 5s linear infinite;
-  --animate-marquee2: marquee2 5s linear infinite;
+  --animate-marquee: marquee 10s linear infinite;
+  --animate-marquee2: marquee2 10s linear infinite;
 
   @keyframes marquee {
     0% {
@@ -97,4 +97,36 @@
   h6 {
     @apply font-heading;
   }
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-left: 3px solid var(--foreground);
+  border-top: 3px solid var(--foreground);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8093f1;
+  border: 3px solid var(--foreground);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff90e8;
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--foreground);
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
