@@ -17,7 +17,7 @@ const techLogos = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center pt-32  inset-0 bg-size-[40px_40px] bg-[linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)] bg-white dark:bg-zinc-950">
+    <section className="relative  flex flex-col justify-center pt-32  inset-0 bg-size-[40px_40px] bg-[linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)] bg-white dark:bg-zinc-950">
       <div className="max-w-6xl mx-auto px-6 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           {/* RIGHT SIDE (FOTO) */}
