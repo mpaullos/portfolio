@@ -9,7 +9,7 @@ export const projects = [
     highlight: "Layout moderno e responsivo",
     description:
       "Landing page focada em conversão, responsividade e boas práticas de UI.",
-    techs: ["HTML", "CSS", "JavaScript"],
+    techs: ["HTML", "CSS", "Bootstrap", "JavaScript"],
     live: "https://mpaullos.github.io/holy-summer/",
     repo: "https://github.com/mpaullos/holy-summer",
   },
@@ -30,7 +30,7 @@ export const projects = [
     description:
       "Aplicação que consome API externa para dados climáticos em tempo real.",
     techs: ["Node.js", "Express", "API"],
-    live: "https://glorious-elk-kit.cyclic.app/",
+    live: "https://weather-project-snowy-nine.vercel.app/",
     repo: "https://github.com/mpaullos/WeatherProject",
   },
 ];
