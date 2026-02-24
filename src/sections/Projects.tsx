@@ -1,3 +1,5 @@
+import { Github, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { projects } from "../data/projects";
 
 export default function Projects() {
@@ -92,28 +94,22 @@ export default function Projects() {
                   href={project.repo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="
-                    underline
-                    decoration-2
-                    underline-offset-4
-                    hover:opacity-70
-                  "
                 >
-                  Código
+                  <Button className="bg-[#60A4FA]">
+                    <Github />
+                    Código
+                  </Button>
                 </a>
 
                 <a
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="
-                    underline
-                    decoration-2
-                    underline-offset-4
-                    hover:opacity-70
-                  "
                 >
-                  Ver projeto
+                  <Button className="bg-[#4BDD7F]">
+                    <ExternalLink />
+                    Ver projeto
+                  </Button>
                 </a>
               </div>
             </article>
