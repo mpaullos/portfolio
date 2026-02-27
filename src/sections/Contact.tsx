@@ -25,10 +25,7 @@ export default function Contact() {
   ];
 
   return (
-    <section
-      id="contact"
-      className="py-24 bg-[#85EEAB] border-t-4 border-black text-black"
-    >
+    <section id="contact" className="py-24 bg-[#85EEAB]  text-black">
       <div className="max-w-6xl mx-auto px-6">
         <header className="mb-16 text-center">
           <h2 className="text-5xl font-black tracking-tight">
