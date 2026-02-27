@@ -15,6 +15,15 @@ const techLogos = [
   { icon: <SiTailwindcss />, title: "Tailwind CSS" },
 ];
 
+const socialLinks = [
+  {
+    icon: <Github />,
+    href: "https://github.com/mpaullos",
+  },
+  { icon: <Linkedin />, href: "https://www.linkedin.com/in/mpaullos/" },
+  { icon: <Mail />, href: "mailto:marcos.paullo32@gmail.com" },
+];
+
 export default function Hero() {
   return (
     <section
@@ -57,10 +66,10 @@ export default function Hero() {
 
             {/* Social Icons */}
             <div className="mt-8 flex gap-6">
-              {[Github, Linkedin, Mail].map((Icon, i) => (
+              {socialLinks.map((social, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href={social.href}
                   className="
             p-3
             bg-white
@@ -70,8 +79,9 @@ export default function Hero() {
             hover:translate-x-1 hover:translate-y-1
             hover:shadow-none
           "
+                  target="_blank"
                 >
-                  <Icon className="w-6 h-6 text-black" />
+                  {social.icon}
                 </a>
               ))}
             </div>
@@ -88,7 +98,7 @@ export default function Hero() {
           hover:shadow-none
         "
               >
-                View Projects
+                <a href="#projects">View Projects</a>
               </Button>
 
               <Button
@@ -101,7 +111,7 @@ export default function Hero() {
           hover:shadow-none
         "
               >
-                Contact Me
+                <a href="#contact">Contact Me</a>
               </Button>
             </div>
           </div>
