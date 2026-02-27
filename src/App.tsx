@@ -3,6 +3,8 @@ import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Experience from "./sections/Experience";
+import Contact from "@/sections/Contact";
+import Footer from "@/sections/Footer";
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
         <About />
         <Projects />
         <Experience />
+        <Contact />
+        <Footer />
       </main>
     </div>
   );
