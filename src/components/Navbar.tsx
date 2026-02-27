@@ -1,15 +1,18 @@
 import { Code2, Home, Folder, Mail, User } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
-
-const navItems = [
-  { label: "Home", href: "#home", icon: Home },
-  { label: "About", href: "#about", icon: User },
-  { label: "Projetos", href: "#projects", icon: Folder },
-  { label: "Experience", href: "#experience", icon: Code2 },
-  { label: "Contato", href: "#contact", icon: Mail },
-];
+import LanguageToggle from "./LanguageToggle";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
+  const { t } = useTranslation();
+
+  const navItems = [
+    { label: t("nav.home"), href: "#home", icon: Home },
+    { label: t("nav.about"), href: "#about", icon: User },
+    { label: t("nav.projects"), href: "#projects", icon: Folder },
+    { label: t("nav.experience"), href: "#experience", icon: Code2 },
+    { label: t("nav.contact"), href: "#contact", icon: Mail },
+  ];
   return (
     <>
       {/* ================= DESKTOP NAV ================= */}
@@ -55,7 +58,10 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <ThemeToggle />
+          <div className="flex items-center gap-4">
+            <ThemeToggle />
+            <LanguageToggle />
+          </div>
         </div>
       </nav>
 
@@ -76,7 +82,10 @@ export default function Navbar() {
           Marcos.dev
         </div>
 
-        <ThemeToggle />
+        <div className="flex items-center gap-4">
+          <ThemeToggle />
+          <LanguageToggle />
+        </div>
       </header>
 
       {/* ================= MOBILE DOCK ================= */}
