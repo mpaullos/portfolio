@@ -1,54 +1,52 @@
 import { Code2, Home, Folder, Mail, User } from "lucide-react";
-import { useNavbarScroll } from "../hooks/useNavbarScroll";
 import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   { label: "Home", href: "#home", icon: Home },
-  { label: "Projetos", href: "#projects", icon: Folder },
-  { label: "Contato", href: "#contact", icon: Mail },
   { label: "About", href: "#about", icon: User },
+  { label: "Projetos", href: "#projects", icon: Folder },
+  { label: "Experience", href: "#experience", icon: Code2 },
+  { label: "Contato", href: "#contact", icon: Mail },
 ];
 
 export default function Navbar() {
-  const progress = useNavbarScroll();
-  const isScrolled = progress > 0.05;
-
   return (
     <>
       {/* ================= DESKTOP NAV ================= */}
       <nav
         className="
           hidden md:block
-          fixed top-6 left-1/2 -translate-x-1/2 z-50
-          bg-yellow-300
-          border-4 border-black
-          shadow-[8px_8px_0px_0px_black]
+          fixed top-0 left-0 w-full z-50
+          backdrop-blur-md
+          bg-white/10
+          dark:bg-[#121212]/40
+          border-b-3 border-black dark:border-white
           transition-all duration-300
         "
-        style={{
-          width: isScrolled ? "850px" : "950px",
-        }}
       >
-        <div className="grid grid-cols-3 items-center px-8 py-4">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-3 font-bold text-black">
+          <div className="flex items-center gap-3 font-bold text-black dark:text-white">
             <Code2 size={24} strokeWidth={3} />
-            <span className="text-lg">Marcos.dev</span>
+            <span className="text-lg tracking-wide">Marcos.dev</span>
           </div>
 
-          {/* Menu central */}
-          <ul className="flex justify-center gap-6">
+          {/* Menu */}
+          <ul className="flex items-center gap-8 uppercase">
             {navItems.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
                   className="
-                    relative px-3 py-1
-                    font-bold text-black
-                    border-2 border-transparent
-                    hover:border-black
-                    hover:bg-pink-400
-                    transition-all
+                    relative font-semibold
+                    text-black dark:text-white
+                    transition-colors duration-200
+                    after:absolute after:left-0 after:-bottom-1
+                    after:h-0.5 after:w-0
+                    after:bg-black dark:after:bg-white
+                    after:transition-all after:duration-300
+                    hover:after:w-full
+                    hover:text-[#FB64B5]
                   "
                 >
                   {item.label}
@@ -57,10 +55,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* Toggle */}
-          <div className="flex justify-end">
-            <ThemeToggle />
-          </div>
+          <ThemeToggle />
         </div>
       </nav>
 
@@ -69,13 +64,14 @@ export default function Navbar() {
         className="
           md:hidden
           fixed top-0 inset-x-0 z-50
-          flex items-center justify-between
-          px-4 py-4
-          bg-yellow-300
-          border-b-4 border-black
+          backdrop-blur-md
+          bg-white/10
+          dark:bg-[#121212]/40
+          border-b-3 border-black dark:border-white
+          px-4 py-4 flex items-center justify-between
         "
       >
-        <div className="flex items-center gap-2 font-bold text-black">
+        <div className="flex items-center gap-2 font-bold text-black dark:text-white">
           <Code2 size={22} strokeWidth={3} />
           Marcos.dev
         </div>
@@ -88,8 +84,10 @@ export default function Navbar() {
         className="
           md:hidden
           fixed bottom-0 inset-x-0 z-50
-          bg-pink-400
-          border-t-4 border-black
+          backdrop-blur-md
+          bg-white/10
+          dark:bg-[#121212]/60
+          border-t border-black/20 dark:border-white/20
         "
       >
         <ul className="flex justify-around py-3">
@@ -101,12 +99,13 @@ export default function Navbar() {
                   href={item.href}
                   className="
                     flex flex-col items-center gap-1
-                    text-xs font-bold text-black
+                    text-xs font-semibold
+                    text-black dark:text-white
                     transition-transform
                     active:translate-y-1
                   "
                 >
-                  <Icon size={22} strokeWidth={3} />
+                  <Icon size={22} strokeWidth={2.5} />
                   {item.label}
                 </a>
               </li>
