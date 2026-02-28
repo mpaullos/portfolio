@@ -5,5 +5,12 @@
     "projects": "Projects",
     "experience": "Experience",
     "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Marcos Paulo",
+    "role": "FullStack Developer",
+    "description": "A passionate software developer specializing in web development. I create modern and responsive websites using the latest technologies.",
+    "projects": "View Projects",
+    "contact": "Contact Me"
   }
 }

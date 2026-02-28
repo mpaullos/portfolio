@@ -23,6 +23,7 @@ import {
 } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import Marquee from "@/components/ui/marquee";
+import { useTranslation } from "react-i18next";
 
 const techLogos = [
   { icon: <SiReact />, title: "React" },
@@ -57,6 +58,7 @@ const socialLinks = [
 ];
 
 export default function Hero() {
+  const { t } = useTranslation();
   return (
     <section
       id="home"
@@ -77,7 +79,7 @@ export default function Hero() {
       "
             >
               <img
-                src="/foto.jpg"
+                src="./profile/profile_01.jpg"
                 alt="Marcos Paulo"
                 className="w-full h-full object-cover"
               />
@@ -86,15 +88,15 @@ export default function Hero() {
 
           {/* LEFT SIDE (TEXTO) */}
           <div className="order-2 lg:order-1">
-            <p className="text-lg font-medium text-black">I'm Marcos Paulo</p>
+            <p className="text-lg font-medium text-black dark:text-white">
+              {t("hero.greeting")}
+            </p>
 
             <h1 className="mt-2 text-5xl sm:text-6xl lg:text-7xl font-black leading-tight">
-              FullStack Developer
+              {t("hero.role")}
             </h1>
 
-            <p className="mt-5">
-              I like coffee and building web applications. I use Arch btw.
-            </p>
+            <p className="mt-5">{t("hero.description")}</p>
 
             {/* Social Icons */}
             <div className="mt-8 flex gap-6">
@@ -130,7 +132,7 @@ export default function Hero() {
           hover:shadow-none
         "
               >
-                <a href="#projects">View Projects</a>
+                <a href="#projects">{t("hero.projects")}</a>
               </Button>
 
               <Button
@@ -143,7 +145,7 @@ export default function Hero() {
           hover:shadow-none
         "
               >
-                <a href="#contact">Contact Me</a>
+                <a href="#contact">{t("hero.contact")}</a>
               </Button>
             </div>
           </div>

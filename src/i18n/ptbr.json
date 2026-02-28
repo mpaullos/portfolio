@@ -5,5 +5,13 @@
     "projects": "Projetos",
     "experience": "Experiência",
     "contact": "Contato"
+  },
+
+  "hero": {
+    "greeting": "Olá, eu sou Marcos Paulo",
+    "role": "Desenvolvedor FullStack",
+    "description": "Um desenvolvedor de software apaixonado, especializado em desenvolvimento web. Crio sites modernos e responsivos utilizando as tecnologias mais recentes.",
+    "projects": "Ver Projetos",
+    "contact": "Entre em Contato"
   }
 }
