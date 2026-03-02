@@ -9,7 +9,7 @@ export function ThemeToggle() {
   return (
     <Button size="icon" onClick={toggleTheme}>
       {dark ? (
-        <Sun className="w-5 h-5 text-yellow-400" />
+        <Sun className="w-5 h-5 text-white" />
       ) : (
         <Moon className="w-5 h-5 text-zinc-800 dark:text-zinc-100" />
       )}
