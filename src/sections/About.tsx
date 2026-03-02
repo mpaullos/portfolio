@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 export default function About() {
+  const { t } = useTranslation();
   return (
     <section
       id="about"
@@ -43,10 +46,7 @@ export default function About() {
                 <span className="ml-2 text-green-400">$</span>
                 <span className="ml-2 text-yellow-300">whoami</span>
               </p>
-              <p className="text-zinc-300">
-                Desenvolvedor focado em front-end moderno, apaixonado por
-                interfaces bem construídas e experiências intuitivas.
-              </p>
+              <p className="text-zinc-300">{t("about.whoami")}</p>
 
               {/* skills */}
               <p>
@@ -58,9 +58,7 @@ export default function About() {
                 <span className="ml-2 text-green-400">$</span>
                 <span className="ml-2 text-yellow-300">skills</span>
               </p>
-              <p className="text-zinc-300">
-                React • TypeScript • UI/UX • Arquitetura de Componentes
-              </p>
+              <p className="text-zinc-300">{t("about.skills")}</p>
 
               {/* echo */}
               <p>
@@ -71,7 +69,7 @@ export default function About() {
                 <span className="text-purple-400">~</span>
                 <span className="ml-2 text-green-400">$</span>
                 <span className="ml-2 text-yellow-300">echo</span>
-                <span className="ml-2 text-orange-400">"Always building."</span>
+                <span className="ml-2 text-orange-400">{t("about.echo")}</span>
                 <span className="inline-block w-1 h-4 bg-green-400 ml-2 animate-[blink_1s_step-end_infinite]" />
               </p>
             </div>
@@ -80,25 +78,14 @@ export default function About() {
           {/* Minha Jornada */}
           <div>
             <h2 className="text-3xl font-black mb-6 tracking-tight border-b-4 border-pink-400 inline-block uppercase">
-              Minha Jornada
+              {t("about.title")}
             </h2>
 
-            <p className="font-medium mb-4">
-              Minha trajetória começou com curiosidade sobre como as interfaces
-              funcionam e evoluiu para um interesse profundo por arquitetura
-              front-end e boas práticas de desenvolvimento.
-            </p>
+            <p className="font-medium mb-4">{t("about.description-1")}</p>
 
-            <p className="font-medium mb-4">
-              Ao longo do tempo, participei de projetos acadêmicos e
-              profissionais que me permitiram desenvolver visão crítica,
-              organização e foco em resultado.
-            </p>
+            <p className="font-medium mb-4">{t("about.description-2")}</p>
 
-            <p className="font-medium">
-              Hoje, busco construir soluções que unam clareza visual, desempenho
-              e código bem estruturado.
-            </p>
+            <p className="font-medium">{t("about.description-3")}</p>
           </div>
         </div>
       </div>

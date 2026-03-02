@@ -12,5 +12,14 @@
     "description": "A passionate software developer specializing in web development. I create modern and responsive websites using the latest technologies.",
     "projects": "View Projects",
     "contact": "Contact Me"
+  },
+  "about": {
+    "title": "My Journey",
+    "description-1": "My journey began with curiosity about how interfaces work and evolved into a deep interest in front-end architecture and best development practices.",
+    "description-2": "Over time, I participated in academic and professional projects that allowed me to develop critical thinking, organization, and a results-driven mindset.",
+    "description-3": "Today, I strive to build solutions that combine visual clarity, performance, and well-structured code.",
+    "whoami": "Developer focused on modern front-end, passionate about well-crafted interfaces and intuitive experiences.",
+    "skills": "React • TypeScript • Next.js • Tailwind CSS • Component Architecture • Responsive UI • API Integration",
+    "echo": "Always building!"
   }
 }

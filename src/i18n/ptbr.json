@@ -13,5 +13,14 @@
     "description": "Um desenvolvedor de software apaixonado, especializado em desenvolvimento web. Crio sites modernos e responsivos utilizando as tecnologias mais recentes.",
     "projects": "Ver Projetos",
     "contact": "Entre em Contato"
+  },
+  "about": {
+    "title": "Minha jornada",
+    "description-1": " Minha trajetória começou com curiosidade sobre como as interfacesfuncionam e evoluiu para um interesse profundo por arquiteturafront-end e boas práticas de desenvolvimento.",
+    "description-2": "Ao longo do tempo, participei de projetos acadêmicos e profissionais que me permitiram desenvolver visão crítica, organização e foco em resultado.",
+    "description-3": "Hoje, busco construir soluções que unam clareza visual, desempenho e código bem estruturado.",
+    "whoami": "Desenvolvedor focado em front-end moderno, apaixonado por interfaces bem construídas e experiências intuitivas.",
+    "skills": "React • TypeScript • Next.js • Tailwind CSS • Arquitetura de Componentes • UI Responsiva • Integração de APIs",
+    "echo": "Sempre consturindo!"
   }
 }
