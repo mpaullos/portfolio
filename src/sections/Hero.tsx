@@ -107,6 +107,7 @@ export default function Hero() {
                   className="
             p-3
             bg-white
+            text-black
             border-4 border-black
             shadow-[4px_4px_0px_0px_black]
             transition-all duration-150
