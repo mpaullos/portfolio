@@ -22,5 +22,9 @@
     "whoami": "Desenvolvedor focado em front-end moderno, apaixonado por interfaces bem construídas e experiências intuitivas.",
     "skills": "React • TypeScript • Next.js • Tailwind CSS • Arquitetura de Componentes • UI Responsiva • Integração de APIs",
     "echo": "Sempre consturindo!"
+  },
+  "projects": {
+    "title": "Projetos Selecionados",
+    "description": "Alguns trabalhos que demonstram minha experiência com front-end, boas práticas e foco em resultado."
   }
 }

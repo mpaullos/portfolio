@@ -1,8 +1,10 @@
 import { Github, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { projects } from "../data/projects";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
+  const { t } = useTranslation();
   return (
     <section
       id="projects"
@@ -16,11 +18,10 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto px-6">
         <header className="mb-14">
           <h2 className="text-5xl text-center uppercase font-black mb-2 tracking-tight">
-            Projetos selecionados
+            {t("projects.title")}
           </h2>
           <p className="font-medium text-center">
-            Alguns trabalhos que demonstram minha experiência com front-end,
-            boas práticas e foco em resultado.
+            {t("projects.description")}
           </p>
         </header>
 
