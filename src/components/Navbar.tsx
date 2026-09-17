@@ -2,17 +2,29 @@ import { Code2, Home, Folder, Mail, User } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import LanguageToggle from "./LanguageToggle";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const { t } = useTranslation();
+  const { pathname } = useLocation();
+  const isHome = pathname === "/";
 
   const navItems = [
-    { label: t("nav.home"), href: "#home", icon: Home },
-    { label: t("nav.about"), href: "#about", icon: User },
-    { label: t("nav.projects"), href: "#projects", icon: Folder },
-    { label: t("nav.experience"), href: "#experience", icon: Code2 },
-    { label: t("nav.contact"), href: "#contact", icon: Mail },
+    { label: t("nav.home"), section: "home", icon: Home },
+    { label: t("nav.about"), section: "about", icon: User },
+    { label: t("nav.projects"), section: "projects", icon: Folder },
+    { label: t("nav.experience"), section: "experience", icon: Code2 },
+    { label: t("nav.contact"), section: "contact", icon: Mail },
   ];
+
+  const getHref = (section: string) => {
+    if (section === "projects") {
+      return isHome ? "#projects" : "/projects";
+    }
+
+    return isHome ? `#${section}` : `/#${section}`;
+  };
+
   return (
     <>
       {/* ================= DESKTOP NAV ================= */}
@@ -37,9 +49,9 @@ export default function Navbar() {
           {/* Menu */}
           <ul className="flex items-center gap-8 uppercase">
             {navItems.map((item) => (
-              <li key={item.href}>
+              <li key={item.section}>
                 <a
-                  href={item.href}
+                  href={getHref(item.section)}
                   className="
                     relative font-semibold
                     text-black dark:text-white
@@ -103,9 +115,9 @@ export default function Navbar() {
           {navItems.map((item) => {
             const Icon = item.icon;
             return (
-              <li key={item.href}>
+              <li key={item.section}>
                 <a
-                  href={item.href}
+                  href={getHref(item.section)}
                   className="
                     flex flex-col items-center gap-1
                     text-xs font-semibold
