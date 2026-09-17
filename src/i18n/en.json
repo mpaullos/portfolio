@@ -24,7 +24,28 @@
   },
   "projects": {
     "title": "Selected Projects",
-    "description": "Some projects that demonstrate my experience in front-end development, best practices, and a results-driven approach."
+    "description": "Some projects that demonstrate my experience in front-end development, best practices, and a results-driven approach.",
+    "code": "Code",
+    "private": "Private",
+    "visit": "View project",
+    "seeMore": "See more projects",
+    "items": {
+      "holySummer": {
+        "title": "Holy Summer",
+        "highlight": "Modern and responsive layout",
+        "description": "Landing page focused on conversion, responsiveness, and good UI practices."
+      },
+      "simonGame": {
+        "title": "Simon Game",
+        "highlight": "Logic and interactivity",
+        "description": "Interactive game with state management, events, and visual feedback."
+      },
+      "weatherApp": {
+        "title": "Weather App",
+        "highlight": "API consumption",
+        "description": "Application that consumes an external API for real-time weather data."
+      }
+    }
   }
 }
   
