@@ -31,20 +31,25 @@
     "visit": "Ver projeto",
     "seeMore": "Ver mais projetos",
     "items": {
+      "mposPortfolio": {
+        "title": "MPOS Portfolio",
+        "highlight": "Desktop interativo",
+       "description": "Portfólio interativo inspirado em sistemas operacionais, com interface de desktop, janelas e aplicações funcionais."
+      },
       "holySummer": {
         "title": "Holy Summer",
         "highlight": "Layout moderno e responsivo",
         "description": "Landing page focada em conversão, responsividade e boas práticas de UI."
       },
-      "simonGame": {
-        "title": "Simon Game",
-        "highlight": "Lógica e interatividade",
-        "description": "Jogo interativo com controle de estado, eventos e feedback visual."
-      },
       "weatherApp": {
         "title": "Weather App",
         "highlight": "Consumo de API",
         "description": "Aplicação que consome API externa para dados climáticos em tempo real."
+      },
+      "simonGame": {
+        "title": "Simon Game",
+        "highlight": "Lógica e interatividade",
+        "description": "Jogo interativo com controle de estado, eventos e feedback visual."
       }
     }
   }

@@ -30,6 +30,11 @@
     "visit": "View project",
     "seeMore": "See more projects",
     "items": {
+      "mposPortfolio": { 
+        "title": "MPOS Portfolio", 
+        "highlight": "Interactive desktop", 
+        "description": "Interactive portfolio inspired by operating systems, featuring a desktop interface, windows, and functional applications." 
+      },
       "holySummer": {
         "title": "Holy Summer",
         "highlight": "Modern and responsive layout",
