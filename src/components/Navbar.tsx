@@ -106,9 +106,9 @@ export default function Navbar() {
           md:hidden
           fixed bottom-0 inset-x-0 z-50
           backdrop-blur-md
-          bg-white/10
+          bg-white
           dark:bg-[#121212]/60
-          border-t border-black/20 dark:border-white/20
+          border-t-4 border-black dark:border-white
         "
       >
         <ul className="flex justify-around py-3">
