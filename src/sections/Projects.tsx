@@ -75,7 +75,7 @@ export default function Projects({ showAll = false }: ProjectsProps) {
                   src={project.image}
                   alt={t(project.titleKey)}
                   className="
-                    w-full aspect-video object-cover
+                    w-full aspect-video object-center
                     transition-transform duration-500 ease-out
                     group-hover:scale-105
                   "
