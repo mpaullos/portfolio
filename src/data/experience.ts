@@ -1,10 +1,19 @@
-export const experience = [
+export type Experience = {
+  id: string;
+  companyKey: string;
+  roleKey: string;
+  period: string;
+  descriptionKey: string;
+  stack: string[];
+};
+
+export const experience: Experience[] = [
   {
-    company: "Impactodo",
-    role: "Desenvolvedor Full Stack",
+    id: "impactodo",
+    companyKey: "experience.items.impactodo.company",
+    roleKey: "experience.items.impactodo.role",
     period: "2025",
-    description:
-      "Atuei no desenvolvimento full stack do novo sistema interno da empresa, implementando funcionalidades no frontend e backend, realizando integrações, correções evolutivas e dando suporte técnico às demandas dos clientes.",
+    descriptionKey: "experience.items.impactodo.description",
     stack: [
       "NextJs",
       "NodeJS",
@@ -19,11 +28,11 @@ export const experience = [
     ],
   },
   {
-    company: "CiSoRise",
-    role: "Desenvolvedor Frontend",
+    id: "cisorise",
+    companyKey: "experience.items.cisorise.company",
+    roleKey: "experience.items.cisorise.role",
     period: "2024",
-    description:
-      "Atuei no desenvolvimento de interfaces e novas funcionalidades no sistema da empresa, focando em usabilidade, performance e melhorias visuais, além de realizar manutenções e ajustes em sites institucionais.",
+    descriptionKey: "experience.items.cisorise.description",
     stack: [
       "HTML",
       "CSS",

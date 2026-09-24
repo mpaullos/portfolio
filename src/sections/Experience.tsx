@@ -1,6 +1,9 @@
 import { experience } from "../data/experience";
+import { useTranslation } from "react-i18next";
 
 export default function Experience() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="experience"
@@ -18,14 +21,13 @@ export default function Experience() {
         {/* Header */}
         <header className="mb-16 text-center">
           <h2 className="text-5xl font-black tracking-tight">
-            Experiência{" "}
+            {t("experience.title")} {" "}
             <span className="underline decoration-4 decoration-black dark:decoration-white">
-              Profissional
+              {t("experience.span")}
             </span>
           </h2>
           <p className="mt-4 font-medium max-w-2xl mx-auto">
-            Um resumo das experiências que contribuíram para minha evolução
-            técnica e profissional.
+            {t("experience.description")}
           </p>
         </header>
 
@@ -36,7 +38,7 @@ export default function Experience() {
 
           {experience.map((exp, index) => (
             <div
-              key={index}
+              key={exp.id}
               className={`flex flex-col md:flex-row gap-8 items-center ${
                 index % 2 === 0 ? "md:flex-row-reverse" : ""
               }`}
@@ -59,10 +61,10 @@ export default function Experience() {
                   <div className="flex justify-between items-start mb-4 gap-4">
                     <div>
                       <h3 className="text-xl font-black uppercase border-b-4 border-black dark:border-white inline-block mb-2">
-                        {exp.company}
+                        {t(exp.companyKey)}
                       </h3>
                       <p className="font-mono text-sm font-semibold">
-                        {exp.role}
+                        {t(exp.roleKey)}
                       </p>
                     </div>
 
@@ -72,7 +74,7 @@ export default function Experience() {
                   </div>
 
                   <p className="mb-6 font-medium leading-relaxed">
-                    {exp.description}
+                    {t(exp.descriptionKey)}
                   </p>
 
                   <div className="flex flex-wrap gap-2">

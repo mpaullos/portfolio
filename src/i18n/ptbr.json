@@ -52,5 +52,22 @@
         "description": "Jogo interativo com controle de estado, eventos e feedback visual."
       }
     }
+  },
+  "experience": {
+    "title": "Experiência",
+    "span": "Profissional",
+    "description": "Um resumo das experiências que contribuíram para minha evolução técnica e profissional.",
+    "items": {
+      "impactodo": {
+        "company": "Impactodo",
+        "role": "Desenvolvedor Full Stack",
+        "description": "Atuei no desenvolvimento full stack do novo sistema interno da empresa, implementando funcionalidades no frontend e backend, realizando integrações, correções evolutivas e dando suporte técnico às demandas dos clientes."
+      },
+      "cisorise": {
+        "company": "CiSoRise",
+        "role": "Desenvolvedor Frontend",
+        "description": "Atuei no desenvolvimento de interfaces e novas funcionalidades no sistema da empresa, focando em usabilidade, performance e melhorias visuais, além de realizar manutenções e ajustes em sites institucionais."
+      }
+    }
   }
 }

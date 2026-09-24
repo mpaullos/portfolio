@@ -51,6 +51,23 @@
         "description": "Application that consumes an external API for real-time weather data."
       }
     }
+  },
+  "experience": {
+    "title": "Professional",
+    "span": "Experience",
+    "description": "A summary of the experiences that contributed to my technical and professional growth.",
+    "items": {
+      "impactodo": {
+        "company": "Impactodo",
+        "role": "Full Stack Developer",
+        "description": "I worked on the full stack development of the company's new internal system, implementing frontend and backend features, integrations, improvements, and technical support for client demands."
+      },
+      "cisorise": {
+        "company": "CiSoRise",
+        "role": "Frontend Developer",
+        "description": "I worked on developing interfaces and new features for the company's system, focusing on usability, performance, and visual improvements, as well as maintaining and adjusting institutional websites."
+      }
+    }
   }
 }
   
