@@ -1,4 +1,6 @@
 import { Mail, Linkedin, Send, MessageCircle } from "lucide-react";
+import { useTranslation } from "react-i18next";
+
 
 export default function Contact() {
   const contacts = [
@@ -23,19 +25,22 @@ export default function Contact() {
       link: "https://discordapp.com/users/xmpss",
     },
   ];
+  const { t } = useTranslation()
+  
+  
 
   return (
     <section id="contact" className="py-24 bg-[#85EEAB]  text-black">
       <div className="max-w-6xl mx-auto px-6">
         <header className="mb-16 text-center">
           <h2 className="text-5xl font-black tracking-tight">
-            Vamos{" "}
+            {t("contact.title")}{" "}
             <span className="underline decoration-4 decoration-black">
-              Conversar
+              {t("contact.span")}
             </span>
           </h2>
           <p className="mt-4 font-medium">
-            Me encontre nas plataformas abaixo.
+            {t("contact.subtitle")}
           </p>
         </header>
 

@@ -69,5 +69,10 @@
         "description": "Atuei no desenvolvimento de interfaces e novas funcionalidades no sistema da empresa, focando em usabilidade, performance e melhorias visuais, além de realizar manutenções e ajustes em sites institucionais."
       }
     }
+  },
+  "contact": {
+    "title": "Vamos",
+    "span": "Conversar",
+    "subtitle": "Me encontre nas plataformas abaixo."
   }
 }
