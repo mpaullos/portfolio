@@ -74,5 +74,8 @@
     "title": "Vamos",
     "span": "Conversar",
     "subtitle": "Me encontre nas plataformas abaixo."
+  },
+  "footer": {
+    "subtitle": "Desenvolvedor FullStack"
   }
 }

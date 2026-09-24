@@ -1,7 +1,11 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import { SiSpotify } from "react-icons/si";
+import { useTranslation } from "react-i18next";
+
 
 export default function Footer() {
+    const { t } = useTranslation();
+  
   return (
     <footer className="border-t-4 border-black bg-[#DDF3F7] px-0 pt-4 pb-20 text-black md:pb-4">
       <div className="mx-auto flex max-w-6xl flex-col gap-3 px-6">
@@ -11,7 +15,7 @@ export default function Footer() {
               Marcos Paulo
             </p>
             <p className="font-mono text-[11px] text-[#263238]">
-              FullStack Developer
+              {t("footer.subtitle")}
             </p>
           </div>
 

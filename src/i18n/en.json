@@ -73,6 +73,9 @@
     "title": "Let's",
     "span": "Talk",
     "subtitle": "Find me on the platforms below."
+  },
+   "footer": {
+    "subtitle": "FullStack Developer"
   }
 }
   
