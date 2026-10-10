@@ -46,7 +46,7 @@ export const projects: Project[] = [
     descriptionKey: "projects.items.weatherApp.description",
     techs: ["Node.js", "Express", "API"],
     live: "https://weather-project-snowy-nine.vercel.app/",
-    repo: "https://github.com/mpaullos/WeatherProject",
+    repo: "https://github.com/mpaullos/weather-app",
     tags: ["pinned"],
   },
   {
