@@ -41,8 +41,8 @@
         "highlight": "Layout moderno e responsivo",
         "description": "Landing page focada em conversão, responsividade e boas práticas de UI."
       },
-      "weatherApp": {
-        "title": "Weather App",
+      "climaup": {
+        "title": "ClimaUp",
         "highlight": "Consumo de API",
         "description": "Aplicação que consome API externa para dados climáticos em tempo real."
       },

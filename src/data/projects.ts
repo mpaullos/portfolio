@@ -1,7 +1,7 @@
 import mpos from "../assets/projects/mpos-portfolio.png";
 import holy from "../assets/projects/holy-summer.png";
 import simon from "../assets/projects/simon-game.png";
-import weather from "../assets/projects/weather-app.png";
+import climaup from "../assets/projects/climaup.png";
 
 export type Project = {
   id: string;
@@ -39,14 +39,14 @@ export const projects: Project[] = [
     tags: ["pinned"],
   },
   {
-    id: "weather-app",
-    titleKey: "projects.items.weatherApp.title",
-    image: weather,
-    highlightKey: "projects.items.weatherApp.highlight",
-    descriptionKey: "projects.items.weatherApp.description",
-    techs: ["Node.js", "Express", "API"],
-    live: "https://weather-project-snowy-nine.vercel.app/",
-    repo: "https://github.com/mpaullos/weather-app",
+    id: "climaup",
+    titleKey: "projects.items.climaup.title",
+    image: climaup,
+    highlightKey: "projects.items.climaup.highlight",
+    descriptionKey: "projects.items.climaup.description",
+    techs: ["React", "Typescript", "Tailwind CSS", "Node.js", "Express", "API"],
+    live: "https://climaup.vercel.app/",
+    repo: "https://github.com/mpaullos/climaup",
     tags: ["pinned"],
   },
   {

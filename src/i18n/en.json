@@ -45,8 +45,8 @@
         "highlight": "Logic and interactivity",
         "description": "Interactive game with state management, events, and visual feedback."
       },
-      "weatherApp": {
-        "title": "Weather App",
+      "climaup": {
+        "title": "ClimaUp",
         "highlight": "API consumption",
         "description": "Application that consumes an external API for real-time weather data."
       }
